@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel = "stylesheet" href = "styleSU.css">
+
+</head>
+<body>
+    <div id = "message">
+        <h1>Welcome! Please Create An Account</h1>
+    </div>
+    <div id = "signInBox">
+        <div id = "usernameBox">
+            <form>
+                <p>Username</p>
+                <input type = "text" id = "username" placeholder="Create your username">
+            </form>
+        </div>
+        <div id = "passwordBox">
+            <form>
+                <p>Password</p>
+                <input type = "text" id = "password" placeholder="Create your password">
+            </form>
+        </div>
+        <div id = "userEmail">
+            <form>
+                <p>Email</p>
+                <input type = "text" id = "email" placeholder="Type in your email">
+            </form>
+        </div>
+        <div id = "userAge">
+            <form>
+                <p>Age</p>
+                <input type = "text" id = "age" placeholder="Type in your age">
+            </form>
+        </div>
+        <div id = "userHeight">
+            <form>
+                <p>Height</p>
+                <input type = "text" id = "height" placeholder="Type in your height (e.g. 5'7)">
+            </form>
+        </div>
+        <div id = "userWeight">
+            <form>
+                <p>Weight</p>
+                <input type = "text" id = "weight" placeholder="Type in your weight in pounds">
+            </form>
+        </div>
+        <div id = "weightGoal">
+            <form>
+                <label>Choose a Weight Goal: </label>
+                <select class = "desiredGoals">
+                    <option hidden disabled selected value = ""> -- Select an option -- </option>
+                    <option id = "increase">Increase Current Weight</option>
+                    <option id = "maintain">Maintain Current Weight</option>
+                    <option id = "decrease">Decrease Current Weight</option>
+                </select>
+            </form>
+        </div>
+        <div id = "fitnessGoal">
+            <form>
+                <label>Choose 1st Fitness Goal: </label>
+                <select class = "desiredGoals">
+                    <option hidden disabled selected value = ""> -- Select an option -- </option>
+                    <option id = "increaseUStrength">Upper Body Strength</option>
+                    <option id = "increaseLStrength">Upper Body Strength</option>
+                    <option id = "increaseUEndurance">Upper Body Endurance</option>
+                    <option id = "increaseLEndurance">Lower Body Endurance</option>
+                    <option id = "increaseCardio">Cardio</option>
+                </select>
+            </form>
+        </div>
+        <div id = "2nd_fitnessGoal">
+            <form>
+                <label>Choose 2nd Fitness Goal: </label>
+                <select class = "desiredGoals">
+                    <option hidden disabled selected value = ""> -- Select an option -- </option>
+                    <option id = "increaseUStrength">Upper Body Strength</option>
+                    <option id = "increaseLStrength">Upper Body Strength</option>
+                    <option id = "increaseUEndurance">Upper Body Endurance</option>
+                    <option id = "increaseLEndurance">Lower Body Endurance</option>
+                    <option id = "increaseCardio">Cardio</option>
+                </select>
+            </form>
+        </div>
+        <div id = "btn">
+            <button id = "signUp" class = "pill" type = "button">Create Account</button>
+        </div>
+    </div>
+    
+</body>
+</html>

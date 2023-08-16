@@ -1,0 +1,91 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+nav img {
+  height: 10%;
+  width: 10%;
+}
+
+.element {
+  margin: 0 10px;
+  font-size: 120%;
+  text-decoration: none;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 110vh;
+  padding: 0 5%;
+  position: relative;
+  bottom: 100px;
+}
+
+.box {
+  width: 25%;
+  height: 60%;
+  background-color: rgb(69, 159, 164);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: black;
+  padding: 2%;
+  word-spacing: 10%;
+}
+
+.container .label {
+  position: relative;
+  padding: 5%;
+  background-color: white;
+  top: -3%;
+  left: 0;
+  width: 90%;
+  text-align: center;
+  font-size: 200%;
+  font-weight: bold;
+}
+
+.quote {
+  font-size: 150%;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin: 12% auto;
+}
+
+.left-box {
+  align-self: center;
+}
+
+.right-box {
+  align-self: center;
+}
+
+#generate-quote {
+  font-size: 150%;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center
+}
+#fact-box {
+    width: 30%;
+    float: left;
+    position: relative;
+    bottom: -140px;
+}
