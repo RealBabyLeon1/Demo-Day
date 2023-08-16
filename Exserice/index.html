@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Routine</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+  
+  <!--nav bar-->
+  <nav>
+    <div id = "Logo">
+        <a href ="#"><img src = "hulLogo.png" width = "250px" height = "50px"></a>
+        <!-- <h1><strong>HealthUpLift</strong></h1> -->
+    </div>
+
+    <div id = "navItems" class = "container">
+        <ul>
+            <li><a href = "#">Home</a></li>
+            <li><a href = "#">Meal Plan</a></li>
+            <li><a href = "#">Exercise Routine</a></li>
+            <li><a href = "#" id = "special">Upgrade!</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <main>
+      <!--AVAILABLE TIME-->
+  <div id="availabilityForm">
+    <h1>Enter Your Available Time</h1>
+    <label for="timeInput">Available Time:</label>
+    <input type="time" id="timeInput">
+    <button onclick="submitTime()">Submit</button>
+    <p id="confirmationMessage"></p>
+    <h3>Indicated Daily Free Time Slot: 4 PM - 5:30 PM</h3> 
+  </div>
+  
+  
+  <script>
+    function submitTime() {
+      const timeInput = document.getElementById("timeInput").value;
+      const confirmationMessage = document.getElementById("confirmationMessage");
+
+      if (timeInput) {
+        confirmationMessage.textContent = `Your available time is: ${timeInput}`;
+      } else {
+        confirmationMessage.textContent = "Please enter a valid time.";
+      }
+    }
+  </script>
+  <!--API-->
+  <h1>Random Exercise Generator</h1>
+  <button id="generateButton">Generate Random Exercise</button>
+  <p id="exerciseName"></p>
+  <p id="exerciseDescription"></p>
+
+  <script>
+    const exercises = [
+      { name: "Push-ups", description: "Perform 10 push-ups." },
+      { name: "Squats", description: "Do 15 squats." },
+      { name: "Plank", description: "Hold a plank for 30 seconds." },
+      { name: "Jumping Jacks", description: "Do 20 jumping jacks." },
+      { name: "Dips", description: "Do 20 dips" },
+      { name: "Flutter kicks", description: "Do 15 Flutter Kicks." },     
+    
+    ];
+
+    const generateButton = document.getElementById("generateButton");
+    const exerciseName = document.getElementById("exerciseName");
+    const exerciseDescription = document.getElementById("exerciseDescription");
+
+    generateButton.addEventListener("click", () => {
+      const randomIndex = Math.floor(Math.random() * exercises.length);
+      const randomExercise = exercises[randomIndex];
+      
+      exerciseName.textContent = "Exercise: " + randomExercise.name;
+      exerciseDescription.textContent = "Description: " + randomExercise.description;
+    });
+  </script>
+
+<!--exercises....................................................................-->
+        <section id="exercise-list">
+            <ul>
+                <h1>Strength Training Exercises:</h1>
+                <li>Push-ups</li>
+                <li>Squats</li>
+                <li>Lunges</li>
+                <li>Plank</li>
+                <li>Dips</li>
+              </ul>
+         </section>
+        </div>
+
+        <section id="exercise-list1">
+            <ul>
+                <h1>Cardiovascular Exercises:</h1>
+                <li>Running or Jogging</li>
+                <li>Cycling</li>
+                <li>Swimming</li>
+                <li>Jump Rope</li>
+                <li>Dancing</li>
+              </ul>
+    </section>
+    <section id="exercise-list2">
+        <ul>
+            <h1>Core Exercises:</h1>
+            <li>Crunches</li>
+            <li>Bicycle Crunches</li>
+            <li>Bicycle Crunches</li>
+            <li>Mountain Climbers</li>
+            <li>Flutter Kicks</li>
+          </ul>
+</section>
+
+
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

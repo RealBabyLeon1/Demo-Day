@@ -3,15 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healthuplift</title>
-    <link href = "index.css" rel = "stylesheet">
-</head> 
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <body>
-    <nav style="background-color: grey;">
-        <a  href = "signIn.html">Sign In</a>
-        <a  href = "signUP.html">Sign Up</a>
-    </nav>
+    <div>
+        <nav>
+           
+            <a href="index.html"><div class="element">Home</div></a>
+            <a href="" target="_blank"><div class="element">Meal Plan</div></a>
+            <a href="" target="_blank"><div class="element">Exercise Routine</div></a>
+            <a href="" target="_blank"><div class="element">Upgrade!</div></a>
+        </nav>
+    </div>
 
+    <div class="container">
+        <div class="box left-box">
+          <div class="label">Profile</div>
+          <h2>Age:</h2>
+          <h2>Weight:</h2>
+          <h2>Height:</h2>
+          <h2>BMI:</h2>
+        </div>
+        
+    <section id="fact-box">
+        <h1>Useless Facts Generator</h1>
+        <button onclick="fetchUselessFacts()">Fetch Useless Facts</button>
+        <div id="factContainer"></div>
+    </section>
+       
+<div class="box right-box">
+          <div class="label">Goals</div>
+          <h2>Goal 1:</h2>
+          <h2>Goal 2:</h2>
+          <h2>Goal 3:</h2>
+        </div>
+    </div>
     
+
+
+<script src="script.js"></script>
 </body>
 </html>
