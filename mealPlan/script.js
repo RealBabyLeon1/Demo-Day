@@ -6,4 +6,17 @@ console.log(data);
 
 getFood()
 
-let foodFacts = [""]
+let meals = ["spinach", "quinoa", "blueberries", "avocado", "kale"]
+
+let foodFacts = ["Spinach is packed with iron and vitamins.", "Quinoa is a complete protein.", "Blueberries are rich in antioxidants.", "Avocado is a good source of healthy fats.", "Kale is high in fiber and vitamins."]
+
+var randInt = Math.floor(Math.random() * meals.length)
+
+var pTag = document.querySelector("p")
+var boxOne = document.querySelector("#box")
+
+boxOne.appendChild(pTag)
+
+pTag.innerHTML =`${meals[randInt] + foodFacts[randInt]}`
+
+console.log
