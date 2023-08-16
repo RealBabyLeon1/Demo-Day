@@ -5,3 +5,5 @@ console.log(data);
 }
 
 getFood()
+
+let foodFacts = [""]

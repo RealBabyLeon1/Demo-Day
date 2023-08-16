@@ -3,46 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="stylenav.css">
+    <link rel="stylesheet" href="quote.css">
 </head>
 <body>
-    <div>
+    <header>
+        <div id="logo">
+            <a href="#"><img src="hulLogo.png" width="250px" height="50px"></a>
+        </div>
         <nav>
-           
-            <a href="index.html"><div class="element">Home</div></a>
-            <a href="" target="_blank"><div class="element">Meal Plan</div></a>
-            <a href="" target="_blank"><div class="element">Exercise Routine</div></a>
-            <a href="" target="_blank"><div class="element">Upgrade!</div></a>
+            <div id="navItems" class="navItems">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Meal Plan</a></li>
+                    <li><a href="#">Exercise Routine</a></li>
+                    <li><a href="#" id="special">Upgrade!</a></li>
+                </ul>
+            </div>
         </nav>
-    </div>
+    </header>
 
     <div class="container">
         <div class="box left-box">
-          <div class="label">Profile</div>
-          <h2>Age:</h2>
-          <h2>Weight:</h2>
-          <h2>Height:</h2>
-          <h2>BMI:</h2>
+            <div class="label">Profile</div>
+            <h2>Age:</h2>
+            <h2>Weight:</h2>
+            <h2>Height:</h2>
+            <h2>BMI:</h2>
         </div>
         
-    <section id="fact-box">
-        <h1>Useless Facts Generator</h1>
-        <button onclick="fetchUselessFacts()">Fetch Useless Facts</button>
-        <div id="factContainer"></div>
-    </section>
+        <section id="fact-box">
+            <h1>Quote Generator</h1>
+            <button onclick="fetchUselessFacts()">Find Quotes</button>
+            <div id="factContainer"></div>
+        </section>
        
-<div class="box right-box">
-          <div class="label">Goals</div>
-          <h2>Goal 1:</h2>
-          <h2>Goal 2:</h2>
-          <h2>Goal 3:</h2>
+        <div class="box right-box">
+            <div class="label">Goals</div>
+            <h2>Goal 1:</h2>
+            <h2>Goal 2:</h2>
+            <h2>Goal 3:</h2>
         </div>
     </div>
-    
 
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
